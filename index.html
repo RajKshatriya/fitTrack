@@ -289,6 +289,17 @@
       </p>
     </div>
   </footer>
+  <script>
+        const toggleButton = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Check if elements exist before adding event listener
+        if (toggleButton && mobileMenu) {
+            toggleButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
 </body>
 
 </html>
