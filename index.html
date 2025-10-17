@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en" class="h-full">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FitTrack • Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="min-h-full bg-slate-50 text-slate-900 font-sans antialiased">
+  <header class="border-b border-slate-200 bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-4 md:px-6">
+      <div class="flex items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <!-- <div class="size-8 rounded-md bg-[url('/img/fitness-logo.jpg')] bg-cover bg-center"></div> -->
+          <a class="text-4xl font-bold" href="Fitness.html">FitTrack</a>
+        </div>
+
+        <nav aria-label="Primary" class="hidden md:block">
+          <ul class="flex items-center gap-6 text-sm">
+            <li>
+              <a href="index.html" aria-current="page" class="text-slate-900 font-medium">
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="Workout.html" class="text-slate-600 hover:text-slate-900">Workouts</a>
+            </li>
+            <li>
+              <a href="Progress.html" class="text-slate-600 hover:text-slate-900">Progress</a>
+            </li>
+            <li>
+              <a href="Community.html" class="text-slate-600 hover:text-slate-900">Community</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button type="button"
+          class="inline-flex items-center rounded-md bg-emerald-600 px-3 py-2 text-sm font-medium text-white hover:bg-emerald-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600">
+         <i class="fas fa-plus mr-2 text-xs"></i>New Workout
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white absolute w-full shadow-lg">
+            <ul class="flex flex-col p-4 text-sm font-medium">
+                <li class="py-2 border-b border-slate-100">
+                    <a href="index.html" aria-current="page" class="block text-slate-900">Dashboard</a>
+                </li>
+                <li class="py-2 border-b border-slate-100">
+                    <a href="Workout.html" class="block text-slate-600 hover:text-slate-900">Workouts</a>
+                </li>
+                <li class="py-2 border-b border-slate-100">
+                    <a href="Progress.html" class="block text-slate-600 hover:text-slate-900">Progress</a>
+                </li>
+                <li class="py-2">
+                    <a href="Community.html" class="block text-slate-600 hover:text-slate-900">Community</a>
+                </li>
+            </ul>
+        </div>
+  </header>
+
+  <main class="mx-auto max-w-7xl px-4 py-6 md:px-6 md:py-10">
+    <section class="mb-6 md:mb-10">
+      <h1 class="text-balance text-2xl font-semibold tracking-tight md:text-3xl">
+        Welcome back, Raj
+      </h1>
+      <p class="mt-1 text-slate-600">
+        Here’s a quick look at your fitness today.
+      </p>
+    </section>
+
+    <section aria-labelledby="metrics-title" class="mb-8 md:mb-12">
+      <h2 id="metrics-title" class="sr-only">Key metrics</h2>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <article class="rounded-xl border border-slate-200 bg-white p-4">
+          <div class="flex items-start justify-between">
+            <div>
+              <p class="text-sm text-slate-600">Steps</p>
+              <p class="mt-1 text-3xl font-semibold tracking-tight md:text-4xl">
+                8,942
+              </p>
+            </div>
+            <span class="inline-flex items-center rounded-md bg-sky-100 px-2 py-1 text-xs font-medium text-sky-700">
+              +12%
+            </span>
+          </div>
+          <div class="mt-3 h-2 w-full rounded-full bg-slate-100">
+            <div class="h-2 w-[72%] rounded-full bg-sky-600"></div>
+          </div>
+          <p class="mt-2 text-xs text-slate-500">Goal: 12,000</p>
+        </article>
+
+        <article class="rounded-xl border border-slate-200 bg-white p-4">
+          <div class="flex items-start justify-between">
+            <div>
+              <p class="text-sm text-slate-600">Calories</p>
+              <p class="mt-1 text-3xl font-semibold tracking-tight md:text-4xl">
+                1,845
+              </p>
+            </div>
+            <span
+              class="inline-flex items-center rounded-md bg-emerald-100 px-2 py-1 text-xs font-medium text-emerald-700">
+              On track
+            </span>
+          </div>
+          <div class="mt-3 h-2 w-full rounded-full bg-slate-100">
+            <div class="h-2 w-[58%] rounded-full bg-emerald-600"></div>
+          </div>
+          <p class="mt-2 text-xs text-slate-500">Goal: 3,200</p>
+        </article>
+
+        <article class="rounded-xl border border-slate-200 bg-white p-4">
+          <div class="flex items-start justify-between">
+            <div>
+              <p class="text-sm text-slate-600">Workout minutes</p>
+              <p class="mt-1 text-3xl font-semibold tracking-tight md:text-4xl">
+                46m
+              </p>
+            </div>
+            <span class="inline-flex items-center rounded-md bg-slate-100 px-2 py-1 text-xs font-medium text-slate-700">
+              Today
+            </span>
+          </div>
+          <div class="mt-3 h-2 w-full rounded-full bg-slate-100">
+            <div class="h-2 w-[46%] rounded-full bg-slate-700"></div>
+          </div>
+          <p class="mt-2 text-xs text-slate-500">Goal: 60m</p>
+        </article>
+
+        <article class="rounded-xl border border-slate-200 bg-white p-4">
+          <div class="flex items-start justify-between">
+            <div>
+              <p class="text-sm text-slate-600">Avg. heart rate</p>
+              <p class="mt-1 text-3xl font-semibold tracking-tight md:text-4xl">
+                78 bpm
+              </p>
+            </div>
+            <span class="inline-flex items-center rounded-md bg-rose-100 px-2 py-1 text-xs font-medium text-rose-700">
+              Resting
+            </span>
+          </div>
+          <div class="mt-3 h-2 w-full rounded-full bg-slate-100">
+            <div class="h-2 w-[30%] rounded-full bg-rose-600"></div>
+          </div>
+          <p class="mt-2 text-xs text-slate-500">Target: 65–80 bpm</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+      <article class="rounded-xl border border-slate-200 bg-white p-4 lg:col-span-2">
+        <div class="mb-4 flex items-center justify-between">
+          <h2 class="text-lg font-semibold tracking-tight">Activity (7 days)</h2>
+          <div class="flex items-center gap-2">
+            <span class="inline-flex items-center gap-2 text-xs text-slate-600">
+              <span class="size-2 rounded-full bg-sky-600"></span> Steps
+            </span>
+            <span class="inline-flex items-center gap-2 text-xs text-slate-600">
+              <span class="size-2 rounded-full bg-emerald-600"></span> Calories
+            </span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-7 items-end gap-2">
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-full rounded-md bg-slate-100 p-1">
+              <div class="h-24 w-full rounded bg-sky-600"></div>
+              <div class="mt-1 h-2 w-[80%] rounded bg-emerald-600"></div>
+            </div>
+            <span class="text-xs text-slate-600">Mon</span>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-full rounded-md bg-slate-100 p-1">
+              <div class="h-28 w-full rounded bg-sky-600"></div>
+              <div class="mt-1 h-2 w-[85%] rounded bg-emerald-600"></div>
+            </div>
+            <span class="text-xs text-slate-600">Tue</span>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-full rounded-md bg-slate-100 p-1">
+              <div class="h-16 w-full rounded bg-sky-600"></div>
+              <div class="mt-1 h-2 w-[55%] rounded bg-emerald-600"></div>
+            </div>
+            <span class="text-xs text-slate-600">Wed</span>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-full rounded-md bg-slate-100 p-1">
+              <div class="h-20 w-full rounded bg-sky-600"></div>
+              <div class="mt-1 h-2 w-[68%] rounded bg-emerald-600"></div>
+            </div>
+            <span class="text-xs text-slate-600">Thu</span>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-full rounded-md bg-slate-100 p-1">
+              <div class="h-32 w-full rounded bg-sky-600"></div>
+              <div class="mt-1 h-2 w-[92%] rounded bg-emerald-600"></div>
+            </div>
+            <span class="text-xs text-slate-600">Fri</span>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-full rounded-md bg-slate-100 p-1">
+              <div class="h-24 w-full rounded bg-sky-600"></div>
+              <div class="mt-1 h-2 w-[77%] rounded bg-emerald-600"></div>
+            </div>
+            <span class="text-xs text-slate-600">Sat</span>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-full rounded-md bg-slate-100 p-1">
+              <div class="h-14 w-full rounded bg-sky-600"></div>
+              <div class="mt-1 h-2 w-[45%] rounded bg-emerald-600"></div>
+            </div>
+            <span class="text-xs text-slate-600">Sun</span>
+          </div>
+        </div>
+      </article>
+
+      <aside class="rounded-xl border border-slate-200 bg-white p-4">
+        <h2 class="text-lg font-semibold tracking-tight">Recent workouts</h2>
+        <ul class="mt-4">
+          <li class="flex items-center justify-between rounded-lg border border-slate-100 p-3">
+            <div>
+              <p class="font-medium">Upper Body Strength</p>
+              <p class="text-sm text-slate-600">45m • 312 kcal</p>
+            </div>
+            <span class="inline-flex items-center gap-2 text-xs text-slate-600">
+              <span class="size-2 rounded-full bg-slate-700"></span> Completed
+            </span>
+          </li>
+          <li class="mt-2 flex items-center justify-between rounded-lg border border-slate-100 p-3">
+            <div>
+              <p class="font-medium">HIIT Cardio</p>
+              <p class="text-sm text-slate-600">22m • 198 kcal</p>
+            </div>
+            <span class="inline-flex items-center gap-2 text-xs text-slate-600">
+              <span class="size-2 rounded-full bg-emerald-600"></span> Today
+            </span>
+          </li>
+          <li class="mt-2 flex items-center justify-between rounded-lg border border-slate-100 p-3">
+            <div>
+              <p class="font-medium">Mobility & Stretch</p>
+              <p class="text-sm text-slate-600">15m • 64 kcal</p>
+            </div>
+            <span class="inline-flex items-center gap-2 text-xs text-slate-600">
+              <span class="size-2 rounded-full bg-sky-600"></span> Recovery
+            </span>
+          </li>
+        </ul>
+        <a href="Workout.html"
+          class="mt-4 w-full rounded-md bg-slate-900 px-3 py-2 text-sm font-medium text-white hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 text-center inline-block">
+          View all
+        </a>
+      </aside>
+    </section>
+
+    <section aria-labelledby="goals-title" class="mt-8 rounded-xl border border-slate-200 bg-white p-4 md:mt-12">
+      <h2 id="goals-title" class="text-lg font-semibold tracking-tight">Goals</h2>
+      <div class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
+        <div class="rounded-lg border border-slate-100 p-4">
+          <p class="text-sm text-slate-600">Weekly active days</p>
+          <p class="mt-1 text-2xl font-semibold tracking-tight">4 / 5</p>
+          <div class="mt-3 h-2 w-full rounded-full bg-slate-100">
+            <div class="h-2 w-[80%] rounded-full bg-emerald-600"></div>
+          </div>
+        </div>
+        <div class="rounded-lg border border-slate-100 p-4">
+          <p class="text-sm text-slate-600">Daily water intake</p>
+          <p class="mt-1 text-2xl font-semibold tracking-tight">1.8 / 2.5 L</p>
+          <div class="mt-3 h-2 w-full rounded-full bg-slate-100">
+            <div class="h-2 w-[72%] rounded-full bg-sky-600"></div>
+          </div>
+        </div>
+        <div class="rounded-lg border border-slate-100 p-4">
+          <p class="text-sm text-slate-600">Avg. sleep</p>
+          <p class="mt-1 text-2xl font-semibold tracking-tight">7h 12m</p>
+          <div class="mt-3 h-2 w-full rounded-full bg-slate-100">
+            <div class="h-2 w-[64%] rounded-full bg-slate-700"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-10 border-t border-slate-200 bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-8 md:px-6">
+      <p class="text-center text-sm text-slate-600">
+        © 2025 FitTrack. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
